@@ -1,0 +1,40 @@
+	1. Tell me about yourself?
+	2. How many years of experience on react.js and node.js? 3-4 years of experience
+	3. What is debouncing?
+	4. What is pure component?
+	5. Write code // CREATE REACT COMPONENT, EXTERNAL API CALLING  SETTING RESPONSE TO STATE
+	
+	const app = ()=>{
+	useeffect(()=>{
+	
+	const [data, setdata] = usestate();
+	  const res = featchdata();
+	  setdata(res);
+	},[])
+	
+	return <div></div>
+	}
+	
+	6. // CREATE A NODE EXPRESS APP WITH 1 GET CALLING
+	
+	const exp = require('express);
+	const app = express()
+	
+	app.get('/users' , (req, res) =>{
+	  return res.send()
+	}
+	
+	7. What is Slice(), Splice()? 
+	8. In redux saga we have generator function, explain?
+	9. What is a component and hook?
+	10. Have you created any custom hooks?
+	11. Typescript utilities explain?
+	12. Display: Inline-block, display: inline what does it do?
+	13. What is the use of PUT and POST Methods?
+	14. Datatypes in Typescript
+	15. What is Box model?
+	16. Have you used bootstrap or any other framework?
+	17. Coding questions: useState (increment+2)
+	18. Coding question: name: const p ={name="john" , greet = this.name()} p.greet() 
+	19. What is the use of Custom Hooks?   Windows, mobile and tablet resizing?
+	20. What is the use of useReducer()?
