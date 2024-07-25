@@ -1,12 +1,12 @@
-	1. Tell me about yourself?
+	1. Tell me about yourself.
 
-	2. How many years of experience on react.js and node.js? 3-4 years of experience
+	2. How many years of experience with react.js and node.js? 3-4 years of experience
 
 	3. What is debouncing?   
-	   Forcefully stopping all the previous execution and considering latest request. Debouncing is not predefined. Ex: Bank ATM money withdraw and deposit.
+	   Forcefully stopping all the previous execution and considering the latest requests. Debouncing is not predefined. Ex: Bank ATM money withdrawal and deposit.
 
-	4. What is pure component?
-	//when ever "property value in state" changes then only render() function will execute by Pure Component.
+	4. What is a pure component?
+	//Whenever ever "property value in state" changes then only render() function will execute by Pure Component.
   	//in normal components render function won't dependent(check) the value of "property in state"
 	//create the Component
 	//take the property(num) in state
@@ -36,18 +36,18 @@
 	}
 	
 	7. What is Slice(), Splice()? 
-	Splice()  it is used to add or remove the elements from array.
+	Splice()  is used to add or remove the elements from an array.
 	let arr = [10,20,30,40,50,60,70,80,90,100];
  
 	arr.splice(4,2);
 	console.log(arr);    //[10,20,30,40,70,80,90,100]
 
-	Slice() - The slice() method returns the selected elements in an array, as a new array object.  Extract particular element in array.
+	Slice() - The slice() method returns the selected elements in an array, as a new array object.  Extract particular elements in array.
 	let arr = [10,20,30,40,50,60,70,80,90,100];
 	console.log( arr.slice(4,6) );    //[ 50, 60 ]
 
 
-	8. In redux saga we have generator function, explain?
+	8. In redux-saga we have a generator function, explain?
 	// Generator Functions
 	// it is used to control the flow of execution of code inside the "function call".
 	// Generator functions suffix with "*"
@@ -69,11 +69,11 @@
 
 	9. What is a component and hook?
 
-    Reusable portion of Complex UI Called as Component.
+    The reusable portion of Complex UI Called a Component.
 
     As a React Developer, we can reuse Components.
 
-    we can call React Applications are Component Based Applications.
+    we can call React Applications Component-Based Applications.
 
     we have two types of Components.
 
@@ -83,22 +83,22 @@
 
 	hooks
 	======
-	Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. Hooks are backwards-compatible.
+	Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. Hooks are backward-compatible.
 	Ex. useState, useEffect, useContext, useReducer
 
 	10. Have you created any custom hooks?
-	yes created few custom hooks like getting window size like getting device type.
-	Windows, mobile and tablet resizing.
+	yes created a few custom hooks like getting window size and device type.
+	Windows, mobile, and tablet resizing.
 
 	11. Typescript utilities explain?
-	Yes i have worked.  We have to give types for all the data sets we are consuming like API response or props we pass from 1 component to another, arguments passed to a function etc.
-	TS is used to make the development bug free because we will know if a particular data is present in the data sets.
+	Yes I have worked.  We have to give types for all the data sets we are consuming like API responses or props we pass from 1 component to another, arguments passed to a function etc.
+	TS is used to make the development bug-free because we will know if a particular data is present in the data sets.
 	
 	12. Display: Inline-block, display: inline what does it do?
 	display property specifies the display behavior (the type of rendering box) of an element.
 
 	13. What is the use of PUT and POST Methods?
-	axios" module used to make the asynchronous calls.
+	Axios" module used to make the asynchronous calls.
 		GET Request     - fetch all employee information
 		POST Request   - add new employee 
 		PUT Request     - update employee information
@@ -117,7 +117,7 @@
 	All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.
 	The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
 
-	16. Have you used bootstrap or any other framework? Material UI
+	16. Have you used Bootstrap or any other framework? Material UI
 
 	17. Coding questions: useState (increment+2)
 
@@ -125,6 +125,6 @@
 
 	19. What is the use of useReducer()?
 
-	20. what is null and undefined ?
-	NULL something given by user, let data=NULL;
-	Undefined is default value of variable when there is no value. Var data;
+	20. what is null and undefined?
+	NULL something given by the user, let data=NULL;
+	Undefined is the default value of the variable when there is no value. Var data;
