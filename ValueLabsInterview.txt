@@ -1,3 +1,5 @@
+Interview Round 2:
+	
 	1. Tell me about yourself.
 
 	2. How many years of experience with react.js and node.js? 3-4 years of experience
@@ -128,3 +130,23 @@
 	20. what is null and undefined?
 	NULL something given by the user, let data=NULL;
 	Undefined is the default value of the variable when there is no value. Var data;
+
+================================================================
+
+Interview Round 1:
+
+1. Tell me about yourself?
+2. Different types of component in react js?
+3. Did you work on AWS?
+4. What is a middleware?
+5. Have to worked on Node.js?
+6. How does routing works in react?
+7. What is asynchronous and synchronous ?
+8. What is controlled and uncontrolled components? 
+9. Explain different components in react?
+10. Explain the statement management in react?
+11. What is the purpose of express.js?
+12. What is state and props?
+13. What is functional component?
+14. What is useState?
+
