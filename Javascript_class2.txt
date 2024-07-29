@@ -1,0 +1,120 @@
+Interaction: alert, prompt, confirm
+===========================================
+alert (shows a message.)
+ It shows a message and waits for the user to press “OK”. Ex: alert("Hello");
+ The mini-window with the message is called a modal window.
+
+ prompt (shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.)
+ The function prompt accepts two arguments: title (question), default (answer input field) .
+ It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
+ Ex: result = prompt(title, [default]);
+
+ In IE: always supply a default
+
+ confirm (shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.)
+ result = confirm(question);
+ The function confirm shows a modal window with a question and two buttons: OK and Cancel.
+The result is true if OK is pressed and false otherwise.
+
+Edge case:
+There are two limitations shared by all the methods above:
+
+The exact location of the modal window is determined by the browser. Usually, it’s in the center.
+The exact look of the window also depends on the browser. We can’t modify it.
+
+=============================================================================================================================================
+
+Type Conversions
+
+1. String Conversion (String conversion happens when we need the string form of a value.)
+We can also call the String(value) function to convert a value to a string. Ex: value = String(value);
+
+2. Numeric Conversion (Numeric conversion in mathematical functions and expressions happens automatically.)
+We can use the Number(value) function to explicitly convert a value to a number. Ex: let num = Number(str);
+
+Numeric conversion rules:
+
+Value	            Becomes…
+undefined	        NaN
+null	            0
+true and false	    1 and 0
+string	            Whitespaces (includes spaces, tabs \t, newlines \n etc.) from the start and end are removed. 
+                    Ex: Number("") --> 0 If the remaining string is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN.
+
+
+3. Boolean Conversion
+
+The conversion rule:
+
+Follows the rules:
+
+Value	                            Becomes…
+0, null, undefined, NaN, ""	        false
+any other value	                    true
+
+Summary
+The three most widely used type conversions are to string, to number, and to boolean.
+String Conversion – Occurs when we output something. Can be performed with String(value). The conversion to string is usually obvious for primitive values.
+
+Numeric Conversion – Occurs in math operations. Can be performed with Number(value).
+
+Edge cases:
+The notable exceptions where people usually make mistakes are:
+
+undefined is NaN as a number, not 0.
+"0" and space-only strings like " " are true as a boolean.
+
+================================================
+
+Basic operators, maths  -- BODMAS (Bracket, Of, Division, Multiplication, Addition, Subtraction)
+
+Terms: “unary”(single operand), “binary”(two operands), “operand”
+
+Maths
+Addition +,
+Subtraction -,
+Multiplication *,
+Division /,
+Remainder %,
+Exponentiation **.
+
+
+String concatenation with binary +
+
+
+
+Numeric conversion, unary +
+
+
+Operator precedence
+
+
+Precedence	Name	Sign
+…	…	…
+14	unary plus	+
+14	unary negation	-
+13	exponentiation	**
+12	multiplication	*
+12	division	/
+11	addition	+
+11	subtraction	-
+…	…	…
+2	assignment	=
+…	…	…
+
+Assignment
+Assignment = returns a value
+
+Chaining assignments
+
+Modify-in-place
+
+
+
+Comparisons
+Summary
+Comparison operators return a boolean value.
+Strings are compared letter-by-letter in the “dictionary” order.
+When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+The values null and undefined equal == each other and do not equal any other value.
+Be careful when using comparisons like > or < with variables that can occasionally be null/undefined. Checking for null/undefined separately is a good idea.
