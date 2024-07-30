@@ -1,20 +1,23 @@
 Interaction: alert, prompt, confirm
 ===========================================
-alert (shows a message.)
+alert 
+shows a message.
  It shows a message and waits for the user to press “OK”. Ex: alert("Hello");
  The mini-window with the message is called a modal window.
 
- prompt (shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.)
+ prompt 
+ shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.
  The function prompt accepts two arguments: title (question), default (answer input field) .
  It shows a modal window with a text message, an input field for the visitor, and the buttons OK/Cancel.
  Ex: result = prompt(title, [default]);
 
  In IE: always supply a default
 
- confirm (shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.)
+ confirm
+ shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
  result = confirm(question);
  The function confirm shows a modal window with a question and two buttons: OK and Cancel.
-The result is true if OK is pressed and false otherwise.
+ The result is true if OK is pressed and false otherwise.
 
 Edge case:
 There are two limitations shared by all the methods above:
@@ -26,10 +29,12 @@ The exact look of the window also depends on the browser. We can’t modify it.
 
 Type Conversions
 
-1. String Conversion (String conversion happens when we need the string form of a value.)
+1. String Conversion 
+String conversion happens when we need the string form of a value.
 We can also call the String(value) function to convert a value to a string. Ex: value = String(value);
 
-2. Numeric Conversion (Numeric conversion in mathematical functions and expressions happens automatically.)
+2. Numeric Conversion 
+Numeric conversion in mathematical functions and expressions happens automatically.
 We can use the Number(value) function to explicitly convert a value to a number. Ex: let num = Number(str);
 
 Numeric conversion rules:
@@ -68,9 +73,10 @@ undefined is NaN as a number, not 0.
 
 Basic operators, maths  -- BODMAS (Bracket, Of, Division, Multiplication, Addition, Subtraction)
 
-Terms: “unary”(single operand), “binary”(two operands), “operand”
+Terms: “unary”(single operand/arguments), “binary”(two operands/arguments), “operand”
 
 Maths
+---------------
 Addition +,
 Subtraction -,
 Multiplication *,
@@ -80,38 +86,85 @@ Exponentiation **.
 
 
 String concatenation with binary +
-
-
+if the binary + is applied to strings, it merges (concatenates) them.
+alert( '1' + 2 ); // "12"
 
 Numeric conversion, unary +
+The unary plus or, in other words, the plus operator + applied to a single value, doesn’t do anything to numbers.
+But if the operand is not a number, the unary plus converts it into a number.
+unary pluses are applied first, they convert strings to numbers, and then the binary plus sums them up.
+
+Why are unary pluses applied to values before the binary ones? As we’re going to see, that’s because of their higher precedence.
 
 
 Operator precedence
+If an expression has more than one operator, the execution order is defined by their precedence, or, in other words, the default priority order of operators.
 
-
-Precedence	Name	Sign
+Precedence	    Name	            Sign
 …	…	…
-14	unary plus	+
-14	unary negation	-
-13	exponentiation	**
-12	multiplication	*
-12	division	/
-11	addition	+
-11	subtraction	-
+14	            unary plus	           +
+14	            unary negation	       -
+13	            exponentiation	       **
+12	            multiplication	       *
+12	            division	            /
+11	            addition	            +
+11	            subtraction	            -
 …	…	…
-2	assignment	=
+2	            assignment	            =
 …	…	…
 
 Assignment
+-----------------
+an assignment = is also an operator. It is listed in the precedence table with the very low priority of 2.
 Assignment = returns a value
+Ex: let x = 2 * 2 + 1;
+alert( x ); // 5
 
 Chaining assignments
+---------------------
+let a, b, c;
+
+a = b = c = 2 + 2;
+
+Chained assignments evaluate from right to left. First, the rightmost expression 2 + 2 is evaluated and then assigned to the variables on the left: c, b and a. At the end, all the variables share a single value.
+
+Once again, for the purposes of readability it’s better to split such code into few lines.
+
+
 
 Modify-in-place
+---------------------
+We often need to apply an operator to a variable and store the new result in that same variable.
+let n = 2;
+n = n + 5;
+n = n * 2;
+This notation can be shortened using the operators += and *=
+Short “modify-and-assign” operators exist for all arithmetical and bitwise operators: /=, -=, etc.
 
+Increment/decrement
+-------------------------------
+Increasing or decreasing a number by one is among the most common numerical operations.
+Increment ++ increases a variable by 1.
+Decrement -- decreases a variable by 1:
 
+edge case: Increment/decrement can only be applied to variables. Trying to use it on a value like 5++ will give an error.
+
+To summarize:
+
+If the result of increment/decrement is not used, there is no difference in which form to use.
 
 Comparisons
+-------------------------------
+the double equality sign == means the equality test, while a single one a = b means an assignment.
+
+Boolean is the result
+All comparison operators return a boolean value:
+
+true – means “yes”, “correct” or “the truth”.
+false – means “no”, “wrong” or “not the truth”.
+
+
+
 Summary
 Comparison operators return a boolean value.
 Strings are compared letter-by-letter in the “dictionary” order.
