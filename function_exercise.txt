@@ -80,3 +80,84 @@ circuitPower(480, 20) ➞ 9600
 Formula power = voltage * ampere
 
 all tests passed.
+
+6.There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+
+let firstNumber = prompt("enter no1", );
+let secondNumber = prompt("enter no2", );
+
+function calRemainder(firstNumber, secondNumber){
+let reminder = firstNumber % secondNumber;
+return reminder;
+}
+
+alert(calRemainder(firstNumber, secondNumber));
+
+Examples
+remainder(1, 3) ➞ 1
+
+remainder(3, 4) ➞ 3
+
+remainder(-9, 45) ➞ -9
+
+remainder(5, 5) ➞ 0
+
+all tests passed.
+
+7.A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Edabit" and store it in a variable called result. He needs your help to fix this code.
+
+const sName = "Edabit";
+let name = prompt("enter your name", );
+
+function getStudentName(name, sName){
+let result = name + sName;
+return result;
+}
+alert(getStudentName(name, sName));
+
+Examples
+nameString("Mubashir") ➞ "MubashirEdabit"
+
+nameString("Matt") ➞ "MattEdabit"
+
+nameString("javaScript") ➞ "javaScriptEdabit"
+Notes
+Don't forget to return the result
+
+all tests passed.
+
+===============================================================================================
+
+
+8. Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+Examples
+lessThan100(22, 15) ➞ true
+// 22 + 15 = 37
+
+lessThan100(83, 34) ➞ false
+// 83 + 34 = 117
+
+lessThan100(3, 77) ➞ true
+
+9. A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
+Create a function which calculates the amount of fuel it needs, given the distance.
+Examples
+calculateFuel(15) ➞ 150
+
+calculateFuel(23.5) ➞ 235
+
+calculateFuel(3) ➞ 100
+Notes
+Distance will be a number greater than zero.
+Return 100 if the calculated fuel turns out to be less than 100.
+
+10.  Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
+Can you help her?
+Examples
+greeting("Matt") ➞ "Hello, Matt!"
+
+greeting("Helen") ➞ "Hello, Helen!"
+
+greeting("Mubashir") ➞ "Hello, my Love!"
+Notes
+READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
