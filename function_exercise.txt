@@ -1,0 +1,82 @@
+1.Write a function that takes an integer minutes and converts it to seconds.
+
+let minutes = prompt("enter minutes", )
+
+function convertMintoSeconds(minutes){
+return minutes * 60;
+}
+
+alert(convertMintoSeconds(minutes));
+
+2.Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+let newNo = prompt("enter a Number", );
+
+function incrementNumber(newNo){
+newNo++
+return newNo;
+}
+
+alert(incrementNumber(newNo));
+
+3.Write a function that takes the base and height of a triangle and return its area.
+
+
+let base = prompt("enter base", );
+let height = prompt("enter height", );
+
+function area(base, height){
+let calcArea = 0.5 * base * height;
+return calcArea;
+}
+alert(area(base, height));
+
+Examples
+triArea(3, 2) ➞ 3
+
+triArea(7, 4) ➞ 14
+
+triArea(10, 10) ➞ 50
+
+3 examples passed.
+
+4.  Create a function that takes the age in years and returns the age in days.
+
+let age = prompt("enter age in years", );
+function calcDays(age){
+let days = age * 365;
+return days;
+}
+alert(calcDays(age));
+
+
+Examples
+calcAge(65) ➞ 23725
+
+calcAge(0) ➞ 0
+
+calcAge(20) ➞ 7300
+
+all tests passed.
+
+5.Create a function that takes voltage and current and returns the calculated power.
+
+
+let voltage = prompt("enter voltage", );
+let current = prompt("enter current", );
+function calPower(voltage, current){
+let power = voltage * current;
+return power;
+}
+alert(calPower(voltage, current));
+
+Examples
+circuitPower(230, 10) ➞ 2300
+
+circuitPower(110, 3) ➞ 330
+
+circuitPower(480, 20) ➞ 9600
+
+Formula power = voltage * ampere
+
+all tests passed.
