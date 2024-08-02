@@ -130,6 +130,22 @@ all tests passed.
 
 
 8. Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+let firstNo = prompt("enter first number", );
+let secondNo = prompt("enter Second Number", );
+
+firstNo = Number(firstNo);
+secondNo = Number(secondNo);
+function calSum(firstNo, secondNo){
+let result = firstNo + secondNo;
+if(result < 100){
+return true;
+} else {
+return false;
+}
+}
+alert(calSum(firstNo, secondNo));
+
 Examples
 lessThan100(22, 15) ➞ true
 // 22 + 15 = 37
@@ -139,8 +155,27 @@ lessThan100(83, 34) ➞ false
 
 lessThan100(3, 77) ➞ true
 
+all tests passed.
+
 9. A vehicle needs 10 times the amount of fuel than the distance it travels. However, it must always carry a minimum of 100 fuel before setting off.
 Create a function which calculates the amount of fuel it needs, given the distance.
+
+
+
+let distance = prompt("enter distance", );
+let minFuel = 10 * distance;
+distance = Number(distance);
+function calculateFuel(distance){
+if (minFuel > 100) {
+return minFuel;
+} else {
+return 100;
+}
+}
+
+alert(calculateFuel(distance, minFuel));
+
+
 Examples
 calculateFuel(15) ➞ 150
 
@@ -150,6 +185,8 @@ calculateFuel(3) ➞ 100
 Notes
 Distance will be a number greater than zero.
 Return 100 if the calculated fuel turns out to be less than 100.
+
+all tests passed.
 
 10.  Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
 Can you help her?
